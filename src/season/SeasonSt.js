@@ -4,8 +4,8 @@ export const SeasonBox = styled.div`
 width: 220px;
 height: 400px;
 /* background-color: navy; */
--webkit-box-shadow: 5px 5px 12px 2px #707070; 
-box-shadow: 5px 5px 19px 2px #707070;
+-webkit-box-shadow: 5px 5px 10px 0px silver; 
+box-shadow: 5px 5px 10px 0px silver; 
 border-radius: 5px;
 filter: brightness(0.7);
 cursor: pointer;
@@ -19,8 +19,8 @@ cursor: pointer;
   
 }
 &:hover {
-  width: 240px;
-  height: 430px;
+  width: 260px;
+  height: 450px;
   filter: brightness(1);
   transition: all 0.5s;
   .SeasonBoxp {
@@ -31,7 +31,7 @@ cursor: pointer;
 `
 
 export const AllSeasonBox = styled.div`
-width: 940px;
+width: 930px;
 height: 600px;
 /* background-color: skyblue; */
 display: flex;
