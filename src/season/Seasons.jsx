@@ -11,14 +11,12 @@ function Seasons() {
     let navigate = useNavigate()
 
     return (
-        <st.Background>
             <st.AllSeasonBox>
                 <st.SeasonBox style={{ background: 'url(' + spring + ')' }} season="봄"><p className='SeasonBoxp'>봄</p></st.SeasonBox>
                 <st.SeasonBox style={{ background: 'url(' + summer + ')' }} season="여름"><p className='SeasonBoxp'>여름</p></st.SeasonBox>
                 <st.SeasonBox style={{ background: 'url(' + fall + ')' }} season="가을"><p className='SeasonBoxp'>가을</p></st.SeasonBox>
                 <st.SeasonBox style={{ background: 'url(' + winter + ')' }} season="겨울"><p className='SeasonBoxp'>겨울</p></st.SeasonBox>
             </st.AllSeasonBox>
-        </st.Background>
     )
 }
 

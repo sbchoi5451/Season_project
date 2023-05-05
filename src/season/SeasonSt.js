@@ -30,16 +30,6 @@ cursor: pointer;
 }
 `
 
-export const Background = styled.div`
-box-sizing: border-box;
-padding: 100px;
-width: 100%;
-height: 700px;
-display: flex;
-align-items: center;
-justify-content: center;
-`
-
 export const AllSeasonBox = styled.div`
 width: 940px;
 height: 600px;
