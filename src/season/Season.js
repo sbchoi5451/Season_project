@@ -1,8 +1,11 @@
 import React from 'react'
+import Seasons from './Seasons'
 
 function Season() {
   return (
-    <div>Season</div>
+    <>
+    <Seasons />
+    </>
   )
 }
 
