@@ -1,10 +1,12 @@
 import React from 'react'
-import Mains from './Mains'
+import MainSearch from './MainSearch'
+import MainLists from './MainLists'
 
 function Main() {
   return (
     <div>
-        <Mains />
+      <MainSearch />
+      <MainLists />
     </div>
   )
 }

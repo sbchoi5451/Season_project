@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Season from '../season/Season'
 import Main from '../main/Main'
 import styled from 'styled-components'
+import Signup from '../signup/Signup'
 
 function Routers() {
     return (
@@ -12,7 +13,7 @@ function Routers() {
                 <Route path="/main" element={<Main />} />
                 <Route path="/board" />
                 <Route path="/login" />
-                <Route path="/signup" />
+                <Route path="/signup" element={<Signup />} />
             </Routes>
         </Background>
     )

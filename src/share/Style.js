@@ -33,9 +33,9 @@ export const Button = styled.button`
     margin-left: 5px;
     width: ${props => props.fn === 'form' ? '60' : (props => props.fn === 'del' ? '60' : '100')}px;
     height: 33px;
-    align-self: flex-end;
-    background-color: ${props => props.fn === 'form' ? '#3CB371' : (props => props.fn === 'del' ? '#CD5C5C' : '#F5F5F5')};
-    color: ${props => props.fn === 'form' ? 'white' : (props => props.fn === 'del' ? 'white' : 'black')};
+    align-self:  ${props => props.fn === 'sign' ? 'center' : 'flex-end'};
+    background-color: ${props => props.fn === 'form' ? '#3CB371' : (props => props.fn === 'del' ? '#CD5C5C' : (props => props.fn === 'sign' ? '#6495ED' : '#F5F5F5'))};
+    color: ${props => props.fn === 'form' ? 'white' : (props => props.fn === 'del' ? 'white' : (props => props.fn === 'sign' ? 'white' : 'black'))};
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -45,6 +45,6 @@ export const Button = styled.button`
     }
     &:active {
         color: white;
-        background-color: ${props => props.fn === 'form' ? '#008000' : (props => props.fn === 'del' ? '#FF0000' : '#423d3d')};
+        background-color: ${props => props.fn === 'form' ? '#008000' : (props => props.fn === 'del' ? '#FF0000' : (props => props.fn === 'sign' ? '#1E90FF' : '#423d3d'))};
     }
 `
