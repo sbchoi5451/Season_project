@@ -12,5 +12,5 @@ export const SearchBox = styled.div`
     /* border: 3px solid silver; */
     border-radius: 5px;
     -webkit-box-shadow: 5px 5px 10px 0px silver; 
-    box-shadow: 5px 5px 10px 0px silver;   
+    box-shadow: 5px 5px 10px 0px silver;
 `

@@ -20,13 +20,22 @@ export const Column = styled.div`
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
+`
+
+export const End = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
 `
 
 export const Button = styled.button`
     margin-left: 5px;
-    width: 100px;
+    width: ${props => props.fn === 'form' ? '60' : (props => props.fn === 'del' ? '60' : '100')}px;
     height: 33px;
     align-self: flex-end;
+    background-color: ${props => props.fn === 'form' ? '#3CB371' : (props => props.fn === 'del' ? '#CD5C5C' : '#F5F5F5')};
+    color: ${props => props.fn === 'form' ? 'white' : (props => props.fn === 'del' ? 'white' : 'black')};
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -36,6 +45,6 @@ export const Button = styled.button`
     }
     &:active {
         color: white;
-        background-color: #423d3d;
+        background-color: ${props => props.fn === 'form' ? '#008000' : (props => props.fn === 'del' ? '#FF0000' : '#423d3d')};
     }
 `
