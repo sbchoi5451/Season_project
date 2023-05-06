@@ -4,10 +4,10 @@ import MainLists from './MainLists'
 
 function Mains() {
   return (
-    <div name="Background">
-        <MainSearch />
-        <MainLists />
-    </div>
+    <>
+      <MainSearch />
+      <MainLists />
+    </>
   )
 }
 

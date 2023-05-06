@@ -85,6 +85,11 @@ const MainListBox = styled.div`
     border-radius: 5px;
     -webkit-box-shadow: 5px 5px 10px 0px silver; 
     box-shadow: 5px 5px 10px 0px silver;
+    &:hover {
+        width: 1000px;
+        height: 800px;
+        transition: all 0.5s;
+    }
     .spanbold {
         font-weight: bold;
     }
@@ -101,10 +106,15 @@ const Image = styled.div`
     /* background-image: url();
     background-position: center;
     background-size: cover; */
-    background-color: #F08080;
+    background-color: silver;
     width: 700px;
     height: 400px;
     border-radius: 5px;
+    &:hover {
+        width: 800px;
+        height: 500px;
+        transition: all 0.5s;
+    }
 `
 
 const ShowBox = styled.div`
