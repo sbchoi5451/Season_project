@@ -21,8 +21,8 @@ box-shadow: 5px 5px 10px 0px silver;
 `
 
 export const SignInputBox = styled.div`
-    width: 300px;
-    height: 80px;
+    width: 340px;
+    height: 100px;
     line-height: 30px;
     /* background-color: skyblue; */
 `
@@ -32,11 +32,15 @@ export const SignLabel = styled.label`
 `
 
 export const SignInput = styled.input`
-    width: 300px;
-    height: 50px;
+    width: 340px;
+    height: 40px;
     border: 1px solid silver;
     border-radius: 5px;
     ::placeholder {
         color: silver;
     }
+`
+
+export const SingCheckMsg = styled.span`
+    font-size: 13px;
 `
