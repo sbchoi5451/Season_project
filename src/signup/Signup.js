@@ -1,10 +1,10 @@
 import React from 'react'
-import Singups from './Singups'
+import Signups from './Signups'
 
 function Signup() {
   return (
     <div>
-        <Singups />
+        <Signups />
     </div>
   )
 }
