@@ -11,7 +11,7 @@ height: 100%;
 `
 
 export const InputStyle = styled.input`
-width: 70%;
+width: ${props => props.width};
 height: ${props => props.height};
 border: 1px solid gray;
 margin-top: 20px;
@@ -37,5 +37,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 border: 1px solid gray;
+margin-top: 20px;
+`
+
+export const RowWrapper = styled.div`
+display: flex;
 margin-top: 20px;
 `

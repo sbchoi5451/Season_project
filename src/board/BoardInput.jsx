@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import * as st from './BoardST'
 import SelectLocation from './SelectLocation';
+import SelectStar from './SelectStar';
+import SelectSeason from './SelectSeason';
 
 function BoardInput() {
 
@@ -32,6 +34,7 @@ function BoardInput() {
     return (
         <st.BodyStyle>
             <st.InputStyle
+                width="70%"
                 height='50px'
                 name='title'
                 type='text'
@@ -48,12 +51,27 @@ function BoardInput() {
             {/* {image && <img src={image.preview} alt="uploaded"/>} */}
 
             <st.InputStyle
+                width="70%"
                 height='50px'
                 name='image'
                 type='file'
                 onChange={handleImageChange} />
 
+            <SelectLocation />
+
+            <SelectSeason />
+
             <st.InputStyle
+                width="70%"
+                height='50px'
+                name='placename'
+                type='text'
+                placeholder='장소 이름' />
+
+            <SelectStar />
+
+            <st.InputStyle
+                width="70%"
                 height='100px'
                 name='content'
                 type='text'
@@ -61,7 +79,10 @@ function BoardInput() {
                 onChange={onContentChangeHadler}
                 placeholder='내용을 작성해주세요' />
 
-            <SelectLocation />
+            <div>
+                <button>작성완료</button>
+                <button>취소</button>
+            </div>
         </st.BodyStyle>
     )
 }

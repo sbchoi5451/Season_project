@@ -1,4 +1,5 @@
 import React from 'react'
+import * as st from './SelectST'
 
 function SelectLocation() {
 
@@ -12,14 +13,14 @@ function SelectLocation() {
     ]
 
   return (
-    <div>
-        <select>
+    <>
+        <st.SelectStyle width="70%" height="50px" margintop="20px">
             <option value="null">지역 선택</option>
             {searchWhere.map(item => 
             <option key={item.value} value={item.value}>{item.label}</option>
             )}
-        </select>
-    </div>
+        </st.SelectStyle>
+    </>
   )
 }
 
